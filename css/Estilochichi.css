@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #D3CCD1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #D3CCD1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #CA6A98;
+}
+
+.logo {
+    height: 70px; 
+    margin-right: 20px; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+    background-color: #D3CCD1;
+    margin: 0;
+    border-bottom: 2px solid #CA6A98;
+    font-size: 17px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #CA6A98;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    text-align: left; 
+    flex-direction: column;
+    justify-content: left;
+}
+
+.chi-chi-img {
+    max-width: 100%;
+    height: 80%;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    max-width: 500px;
+    margin: 0;
+    padding: 0;
+    text-align: left; 
+    font-size: 17px;
+}
+
+.author {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #555;
+    text-align: right; 
+    font-size: 13px;
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.small-logo {
+    height: 70px;
+}
+
+#batallas h2 {
+    color: #CA6A98;
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+}
+
+#batallas h3 {
+    margin-top: 25px; 
+    margin-bottom: 15px; 
+}
+
+#batallas ul {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    padding-left: 20px; 
+}
+
+#batallas ul li {
+    margin-bottom: 10px; 
+}
+
+#batallas ul li ul {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+#personalidad h2 {
+    color: #CA6A98;
+    margin-top: 20px;
+}
+
+#personalidad p {
+    margin-top: 20px;
+    line-height: 1.6; 
+    text-align: left; 
+    max-width: 800px;
+}
+
+#apariencia h2 {
+    color: #CA6A98;
+    margin-top: 20px;
+}
+
+#apariencia p {
+    margin-top: 20px;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 800px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333333;
+}
+
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form button[type="submit"] {
+    background-color: #CA6A98;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #AD5480;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.gallery a {
+    margin-right: 10px;
+    flex: 0 0 auto;
+}
+
+.gallery img {
+    max-width: 250px;
+    height: 250px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.achico {
+    width: 250px;
+    height: 250px;
+}
+
+#video-container {
+    width: 40%; /* Ajusta según tu diseño */
+    margin-left: 20px; /* Añade espacio entre el texto y el contenedor del video */
+}
+
+#video-container h3 {
+    margin-top: 20px; /* Añade espacio arriba del encabezado */
+    margin-bottom: 10px; /* Añade espacio abajo del encabezado */
