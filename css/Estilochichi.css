@@ -19,12 +19,12 @@ body {
 }
 
 .container {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex: 1;
     background-color: #D3CCD1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 header {
@@ -69,35 +69,105 @@ main {
     justify-content: left;
 }
 
-.chi-chi-img {
-    max-width: 100%;
-    height: 80%;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
-.welcome-text {
-    max-width: 500px;
-    margin: 0;
-    padding: 0;
-    text-align: left; 
-    font-size: 17px;
+.text-content {
+    flex: 2;
+    padding-right: 20px;
+    margin-right: 30px; /* Añadir margen derecho */
+}
+
+#video-container {
+    flex: 1;
+    margin-left: 20px; /* Añadir margen izquierdo */
+    margin-top: 20px; /* Añadir margen superior */
+}
+
+
+.text-gallery-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.text-column {
+    margin-bottom: 10px;
+}
+
+.gallery {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en múltiples filas */
+    gap: 15px; /* Espacio entre las imágenes */
+    align-content: flex-start; /* Alinea las filas al principio del contenedor */
+}
+
+.gallery a {
+    display: block;
+    width: calc(50% - 15px); /* Ajusta el ancho de los enlaces para que haya dos imágenes por fila con espacio */
+}
+
+.gallery img {
+    width: 200px; /* Ocupa todo el ancho del enlace */
+    height: 200px; /* Mantiene la proporción de las imágenes */
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.achico {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+#video-container h3 {
+    margin-top: 20px; /* Añadir margen superior */
+    margin-bottom: 10px; /* Añadir margen inferior */
 }
 
 .author {
-    margin-top: 5px;
+    margin-top: 10px;
     font-weight: bold;
     color: #555;
     text-align: right; 
     font-size: 13px;
+    margin-bottom: 5px; /* Reduce el margen para acercar la línea al contenido */
+}
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* O el alto deseado del contenedor principal */
+}
+
+.main-content {
+    flex: 1; /* Hace que este contenedor ocupe el espacio disponible */
 }
 
 .author-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+   margin-top: auto;
+}
+.author {
+    font-size: 14px;
+}
+
+.author a {
+    color: #CA6A98; /* Ajusta el color del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.author a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
 .small-logo {
@@ -185,35 +255,104 @@ form button[type="submit"]:hover {
     background-color: #AD5480;
 }
 
-.gallery {
+.main-content {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    margin-top: 20px;
+    justify-content: space-between;
 }
 
-.gallery a {
-    margin-right: 10px;
-    flex: 0 0 auto;
+.text-content {
+    flex: 2;
+    padding-right: 20px;
 }
 
-.gallery img {
-    max-width: 250px;
-    height: 250px;
+.formulario {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
     border: 1px solid #ddd;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.achico {
-    width: 250px;
-    height: 250px;
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea el contenido al inicio */
 }
 
-#video-container {
-    width: 40%; /* Ajusta según tu diseño */
-    margin-left: 20px; /* Añade espacio entre el texto y el contenedor del video */
+.text-content {
+    flex: 2;
+    padding-right: 20px;
 }
 
-#video-container h3 {
-    margin-top: 20px; /* Añade espacio arriba del encabezado */
-    margin-bottom: 10px; /* Añade espacio abajo del encabezado */
+.formulario {
+    flex: 2;
+    max-width: 500px; /* Limita el ancho máximo del formulario */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea el contenido al inicio (parte superior) */
+}
+
+.text-content {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.formulario {
+    flex: 1;
+    max-width: 500px; /* Limita el ancho máximo del formulario */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0; /* Elimina el margen superior para el título */
+}
+
+#batallas {
+    display: flex;
+    flex-direction: column;
+}
+
+#batallas h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#batallas .main-content {
+    display: flex;
+    align-items: flex-start; /* Alinea verticalmente el formulario y el texto */
+}
+
+.formulario {
+    margin-top: 40px; /* Añade margen superior para mover el formulario hacia abajo */
+    padding: 20px; /* Añade padding para mejorar el espaciado interno del formulario */
+    background-color: #ffffff; /* Opcional: Puedes agregar un color de fondo para destacar el formulario */
+    border-radius: 8px; /* Opcional: Redondea las esquinas del formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: Añade una sombra sutil para destacar el formulario */
+}
+
+footer {
+    background-color: #D3CCD1;
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 2px solid #CA6A98;
+    position: relative; /* Asegura que el margin-bottom se aplique correctamente */
+}
+
+.chichi-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome-text {
+    margin-top: 20px; /* Ajusta este valor para el espacio deseado */
+}
